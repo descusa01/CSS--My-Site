@@ -1,0 +1,263 @@
+body {
+  background-color: #F0D9FF;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #40514E;
+}
+
+hr {
+  border: 6px dotted;
+  border-style: dotted none none none;
+  height: 2px;
+  width: 4%;
+  color: #BFA2DB;
+}
+
+h1 {
+  width: 40%;
+  margin: 50px auto 0 auto;
+  font-family: "Sacramento", sans-serif;
+  font-size: 5.625rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #091353;
+  font-weight: normal;
+}
+
+h3 {
+  color: #BFA2DB;
+}
+
+.profile {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  line-height: 2
+}
+
+.top {
+  position: relative;
+  padding-top: 150px;
+  background-color: #BFA2DB;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.codeimage {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.manageimage {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.profilepic {
+  line-height: 2;
+  display: inline-block;
+  margin-top: 50px
+}
+
+.mid {}
+
+.contact-me {
+  width: 50%;
+  margin: 100px auto 100px auto;
+}
+
+.bottom {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #7F7C82;
+}
+
+.comp {
+  font-size: .75rem;
+  color: white;
+}
+
+.bot-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  display: inline-block;
+  position: absolute;
+  right: 300px;
+  top: 100px;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  background: #6e4299;
+  background-image: -webkit-linear-gradient(top, #6e4299, #7f6599);
+  background-image: -moz-linear-gradient(top, #6e4299, #7f6599);
+  background-image: -ms-linear-gradient(top, #6e4299, #7f6599);
+  background-image: -o-linear-gradient(top, #6e4299, #7f6599);
+  background-image: linear-gradient(to bottom, #6e4299, #7f6599);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #F0D9FF;
+  text-decoration: none;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #091353;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #6e4299;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  float: left;
+  display: block;
+  padding: 0;
+  width: 50px;
+  height: auto;
+  /* Allow the height to adjust proportionally */
+  margin-right: 10px;
+  /* Add some spacing between the icon and menu */
+}
+
+.topnav .icon img {
+  width: auto;
+  height: 50px;
+}
+
+.icon a {
+  text-decoration: none;
+  /* Remove underlines on links */
+  display: inline-block;
+  /* Change anchor to inline-block for better positioning */
+  float: left;
+  display: block;
+  padding: 0;
+  width: 50px;
+  height: auto;
+  /* Allow the height to adjust proportionally */
+  margin-right: 10px;
+  /* Add some spacing between the icon and menu */
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%; /* Each slide takes 100% of the container width */
+}
+
+.carousel-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style the navigation buttons as invisible arrows */
+
+button {
+  background-color: transparent !important; /* Ensure transparency */
+  border: none; /* Remove the button border */
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  position: relative; /* Position for the pseudo-elements */
+  font-size: 0; /* Hide any potential text content */
+}
+
+
+/* Create the left arrow */
+button#prev-button::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid transparent; /* Transparent border color */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Create the right arrow */
+button#next-button::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid transparent; /* Transparent border color */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+    
